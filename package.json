@@ -1,0 +1,17 @@
+{
+  "name": "inc-validation",
+  "version": "1.0.0",
+  "description": "Iran National Code Validation",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Iran",
+    "National Code",
+    "Validation",
+    "Javascript"
+  ],
+  "author": "Hassan Falahi",
+  "license": "ISC"
+}
