@@ -2,9 +2,17 @@
   "name": "inc-validation",
   "version": "1.0.0",
   "description": "Iran National Code Validation",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf build && babel src -d build",
+    "dev": "watch 'npm run build' src",
+    "test": "jest",
+    "test:watch": "watch 'npm run test' src"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
   },
   "keywords": [
     "Iran",
@@ -15,7 +23,11 @@
   "author": "Hassan Falahi",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
     "chai": "4.1.0",
-    "mocha": "3.4.2"
+    "mocha": "3.4.2",
+    "rimraf": "^2.6.1",
+    "watch": "^1.0.2"
   }
 }
