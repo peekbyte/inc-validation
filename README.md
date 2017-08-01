@@ -1,5 +1,5 @@
 # Iran National Code Validation
-This package validate Iran National Code.
+This package validates Iran National Code.
 
 ## install
 ```shell
