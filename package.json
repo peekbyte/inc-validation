@@ -30,8 +30,7 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm test",
-      "commit-msg": "validate commit message"
+      "pre-commit": "npm test"
     }
   },
   "license": "ISC",
