@@ -1,7 +1,7 @@
-var hasCode = code => !code || !code.length ? false : true;
+var hasCode = code => !code || !code.length ? true : false;
 
 var isValid = code => {
-    if (this.hasCode(code))
+    if (hasCode(code))
         return false;
 
     const c = parseInt(code.charAt(9));
