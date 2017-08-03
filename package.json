@@ -28,13 +28,21 @@
   "bugs": {
     "url": "https://github.com/peekbyte/inc-validation/issues"
   },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm test",
+      "commit-msg": "validate commit message"
+    }
+  },
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-latest": "^6.24.1",
     "chai": "4.1.0",
+    "ghooks": "2.0.0",
     "jest": "v20.0.0",
     "mocha": "3.4.2",
+    "np": "2.16.0",
     "rimraf": "^2.6.1",
     "watch": "^1.0.2"
   }
