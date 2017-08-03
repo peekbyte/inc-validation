@@ -5,10 +5,10 @@ This package validates Iran National Code. [![Build Status](https://travis-ci.or
 * [Install](#install)
 * [Example](#example)
 * [Building From Source](#building-from-source)
- + [Get Source From Git And Install Packages](#get-source-from-git-and-install-packages)
- + [Run Test](#run-test)
- + [Test In Local](#test-in-local)
- + [Publish](#publish)
+  + [Get Source From Git And Install Packages](#get-source-from-git-and-install-packages)
+  + [Run Test](#run-test)
+  + [Test In Local](#test-in-local)
+  + [Publish](#publish)
 * [License](#license)
 
 ## Install
@@ -25,8 +25,11 @@ var valid = incValidation.isValid(incValidation);
 //Module format: ES2015
 import * as incValidation from 'incValidation';
 var valid = incValidation.isValid(incValidation);
-```
 
+//Module format: umd
+<script src="node_modules/inc-validation/index.umd.min.js"></script>
+var valid = incValidation.isValid(incValidation);
+```
 ## Building From Source
 
 ### Get Source From Git And Install Packages
@@ -45,6 +48,7 @@ npm run test
 ```shell
 npm link
 ```
+
 ### Publish
 ```shell
 npm release
